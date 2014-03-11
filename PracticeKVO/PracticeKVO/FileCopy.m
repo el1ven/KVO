@@ -10,7 +10,7 @@
 
 @implementation FileCopy
 
--(id)initPath:(NSString *)src targetPath:(NSString*) target{
+-(id)initPath:(NSString *)src targetPath:(NSString*) target{ //init method with source and target path
     self = [super init];
     if(self){
         self->srcPath = src;
@@ -18,7 +18,7 @@
     }
     return self;
 }
--(void)startCopy{
+-(void)startCopy{  // execute to copy file
     
     NSFileManager *fileManager = [NSFileManager defaultManager];//利用NSFileManager来“创建”文件
     BOOL success = [fileManager createFileAtPath:self->targetPath contents:nil attributes:nil];
