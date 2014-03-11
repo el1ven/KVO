@@ -10,9 +10,9 @@
 #import "FileCopy.h"
 @interface User : NSObject
 {
-    FileCopy *fileCopy;
+    FileCopy *fileCopy; //观察者模式的用法
 }
 
--(void)doSomething;
+-(void)doSomething;//用这个函数来进行操作
 
 @end
