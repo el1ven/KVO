@@ -13,6 +13,6 @@
     FileCopy *fileCopy; //观察者模式的用法
 }
 
--(void)doSomething;//用这个函数来进行操作
+-(void)doSomething;//用这个函数来进行拷贝操作
 
 @end
